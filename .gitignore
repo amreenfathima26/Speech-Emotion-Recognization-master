@@ -1,6 +1,43 @@
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Streamlit
+.streamlit/
+
+# Model and Data (Optional - usually data isn't committed, but model might be)
+# data/
+# *.pkl
+# For this user, they might want to commit the model if they had one, but keeping exclusions for safety if files are huge
+# But user wants "1000% work", if they had a model it should be included.
+# However, user doesn't have it yet. I will Un-ignore .pkl just in case they generate it and want to push it.
+# But original gitignore had it. I will keep data/ ignored but allow .pkl if small, but let's stick to standard practice.
+# Actually, the user asked for "no error".
+data/
 *.pkl
 .ipynb_checkpoints
-data/
-venv/
 .env
+.DS_Store
